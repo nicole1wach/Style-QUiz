@@ -127,39 +127,39 @@ const SHEET_URL = "https://script.google.com/macros/s/AKfycbz9mje77sDh2zvRHbHzHB
 const questions = [
   {
     text: "What do you most commonly wear on a typical day?",
-    options: ["Oversized basics — hoodies, joggers, plain tees", "Fitted, structured pieces — trousers, blazers, tailored shirts", "Vintage or thrifted mixed pieces — nothing quite matches but it works", "Statement pieces — something always stands out"]
+    options: ["Oversized basics: hoodies, joggers, plain tees", "Fitted, structured pieces: trousers, tailored shirts, tighter clothing", "Vintage or thrifted mixed pieces: pull off a more laid back outfit", "Statement pieces: something always stands out"]
   },
   {
     text: "What is the one item you reach for most in your wardrobe?",
-    options: ["A clean pair of trainers or minimalist sneakers", "A well-cut coat or structured blazer", "A vintage denim jacket or thrifted statement piece", "A bold accessory — an oversized bag, layered jewellery, or a hat"]
+    options: ["A clean pair of trainers or minimalist sneakers", "A a dress or skirt with a boot", "A statement piece", "A bold accessory: an oversized bag or layered jewellery"]
   },
   {
     text: "What do your shoes most often look like?",
-    options: ["Clean, simple, and neutral — Nike, New Balance, or similar", "Chunky boots, loafers, or something with a strong silhouette", "Worn-in retro trainers or vintage-inspired silhouettes", "Whatever is most comfortable — shoes are not a priority"]
+    options: ["Clean, simple, and neutral: Nike, New Balance, or similar", "Boots, heels, loafers, or something with a strong silhouette", "Worn-in retro trainers or vintage-inspired silhouettes", "Whatever is most comfortable, my shoes are not a priority"]
   },
   {
     text: "How would your friends describe the way you dress?",
-    options: ["Clean and consistently put together", "Always has something unexpected or interesting on", "Effortlessly cool — a bit vintage, never trying too hard", "Relaxed and comfortable — style is not the main focus"]
+    options: ["Clean and consistently put together", "Always has something unexpected or interesting on", "Effortlessly cool", "Relaxed and comfortable"]
   },
   {
     text: "What does the inside of your wardrobe mostly look like?",
-    options: ["Neutral basics that all work together — largely monochrome", "A mix of everything with no clear overarching theme", "Secondhand and vintage finds with a few newer pieces", "Brand pieces or items tied to a specific scene or subculture"]
+    options: ["Neutral basics that all work together", "A mix of everything with no clear overarching theme", "Secondhand and vintage finds with a few newer pieces", "Brand pieces or items tied to a specific scene or subculture"]
   },
   {
     text: "When you get dressed for a social event, you tend to...",
-    options: ["Dress up slightly but keep it understated and refined", "Plan a full intentional look — outfit, shoes, accessories considered together", "Wear something thrifted or unique that you know no one else will have", "Wear what feels right in the moment without much planning"]
+    options: ["Dress up slightly but keep it understated and refined", "Plan a full intentional look: outfit, shoes, accessories considered together", "Wear something unique that you know no one else will have", "Wear what feels right in the moment without much planning"]
   },
   {
     text: "How do you feel about wearing the same outfit twice in a social setting?",
-    options: ["Completely fine — I rewear things constantly", "I prefer not to repeat exact looks but I mix pieces", "I actively style things differently each time to avoid repetition", "I rarely think about it"]
+    options: ["Completely fine", "I prefer not to repeat exact looks but I mix pieces", "I actively style things differently each time to avoid repetition", "I rarely think about it"]
   },
   {
     text: "When you buy a new fashion item, what usually drives the decision?",
     options: ["It fits the aesthetic I am building and works with what I own", "I saw someone wearing it and wanted to recreate the look", "I found it in a vintage or secondhand store and it felt unique", "It was on sale or I needed it practically"]
   },
   {
-    text: "How important is it to you that your outfit is visually coherent — that pieces feel intentionally chosen together?",
-    options: ["Very important — I think about how pieces relate to each other", "Somewhat important — I have a loose sense of aesthetic but I am flexible", "Not very important — I wear what I like regardless of whether it matches", "I have not thought about it in those terms before"]
+    text: "How important is it to you that your outfit is visually coherent and that pieces feel intentionally chosen together?",
+    options: ["Very important, I think about how pieces relate to each other", "Somewhat important, I have a loose sense of aesthetic but I am flexible", "Not very important, I wear what I like regardless of whether it matches", "I have not thought about it in those terms before"]
   },
   {
     text: "Which of these best describes how you engage with fashion content online?",
@@ -167,11 +167,11 @@ const questions = [
   },
   {
     text: "When you notice a trend appearing repeatedly in your feed, you typically...",
-    options: ["Ignore it — trends are not relevant to how I dress", "Adapt elements of it into my existing style", "Buy into it if it aligns with the aesthetic I am already building", "Buy into it because it is popular and I want to feel current"]
+    options: ["Ignore it because trends are not relevant to how I dress", "Adapt elements of it into my existing style", "Buy into it if it aligns with the aesthetic I am already building", "Buy into it because it is popular and I want to feel current"]
   },
   {
     text: "If an algorithm assigned you a style identity based purely on your purchase and browsing history, you would expect it to...",
-    options: ["Capture my style accurately — my data reflects how I dress", "Get the aesthetic right but miss the intentionality behind my choices", "Assign me something too trend-driven — my style is harder to categorise", "Miss entirely — what I buy online does not represent how I actually dress"]
+    options: ["Capture my style accurately", "Get the aesthetic right but miss the intentionality behind my choices", "Assign me something too trend-driven because my style is harder to categorise", "Miss entirely: what I buy online does not represent how I actually dress"]
   }
 ];
 
@@ -197,29 +197,28 @@ const identities = {
     desc: "Your wardrobe is edited rather than accumulated. You gravitate toward neutral palettes, clean silhouettes, and pieces that work across contexts without demanding attention. This is not an absence of style — it is a deliberate refusal of excess. Algorithms read you as aspirational, brand-consistent, and high-intent. You are the consumer that premium and direct-to-consumer brands optimise for: someone who buys less but researches more, and whose purchases signal identity through restraint rather than volume.",
     refs: "Theoretically, your style aligns with what Bourdieu (1984) terms 'distinction through taste' — the idea that aesthetic restraint signals cultural capital. In digital contexts, minimalism functions as a legible identity signal that algorithms amplify through premium and editorial content."
   },
-  softstructure: {
-    title: "The soft structure",
-    subtitle: "Intentional dressing. Aesthetic coherence. Style as self-authorship.",
-    desc: "You dress with intention. Every outfit is a considered composition — not rigid, but structured by an internal logic that others may not immediately see. You are not trend-led, but you are not immune to influence either. You curate rather than consume. Algorithms struggle slightly with you: you are consistent enough to categorise but selective enough to resist easy segmentation. You tend to follow specific labels, aesthetics, or creators rather than broad trends, making you a high-value but harder-to-predict consumer.",
-    refs: "Your approach reflects Goffman's (1959) concept of impression management through deliberate self-presentation. In the digital market, you represent what marketing literature terms a 'high-involvement consumer' — one for whom purchasing is identity work rather than impulse."
-  },
+  fluid: {
+    title: "Classy and fluid",
+    subtitle: "Intentional dressing. Aesthetic coherence. top notch stylish.",
+    desc: "You dress with intention. Every outfit is a considered composition, structured by an internal logic that others may not immediately see. You are not trend-led, but you are not immune to influence either. You curate rather than consume. Algorithms struggle slightly with you: you are consistent enough to categorise but selective enough to resist easy segmentation. You tend to follow specific labels, aesthetics, or creators rather than broad trends, making you a high-value but harder-to-predict consumer.",
+   
   archivist: {
     title: "The archivest",
     subtitle: "Secondhand memory. Cultural layering. Style as resistance.",
-    desc: "Your wardrobe is a collection of references. Vintage, thrifted, and secondhand pieces sit alongside newer finds — but everything is chosen for its specificity, not its newness. You dress against the grain of the algorithm by nature: your style resists easy categorisation, your purchases are non-linear, and your aesthetic is harder to replicate or recommend. Paradoxically, this makes you highly influential — the styles you adopt often move into mainstream algorithmic circulation months after you have moved on.",
-    refs: "Your consumption pattern reflects what scholars term 'anti-consumption' or 'sustainable fashion identity' (Cervellon et al., 2012). In algorithmic terms, your behaviour creates weak signals — you are a category-breaker, which limits personalisation but increases your cultural influence as a trend originator."
+    desc: "Your wardrobe is a collection of references. Vintage, thrifted, and secondhand pieces sit alongside newer finds  but everything is chosen for its specificity, not its newness. You dress against the grain of the algorithm by nature: your style resists easy categorisation, your purchases are non-linear, and your aesthetic is harder to replicate or recommend. Paradoxically, this makes you highly influential. The styles you adopt often move into mainstream algorithmic circulation months after you have moved on.",
+  
   },
   maximalist: {
     title: "The cultural maximalist",
     subtitle: "Subcultural fluency. Visual density. Style as statement.",
-    desc: "You dress loudly and intentionally. Your wardrobe is tied to specific cultural scenes, subcultures, or communities — streetwear, club culture, hypebeast, alt — and what you wear signals membership as much as aesthetic preference. Algorithms know you extremely well. You are the consumer that platforms are built around: trend-responsive, community-oriented, brand-aware, and visually engaged. Your purchasing behaviour is heavily influenced by social proof, drop culture, and the visibility of others in your cultural network.",
-    refs: "Your style reflects what Hebdige (1979) identified as subcultural style as resistance and identity construction. In digital contexts, this translates into what contemporary scholars call 'participatory consumption' — buying as a form of cultural belonging mediated by algorithmic visibility."
+    desc: "You dress loudly and intentionally. Your wardrobe is tied to specific cultural scenes, subcultures, or communities — streetwear, club culture, hypebeast, and what you wear signals membership as much as aesthetic preference. Algorithms know you extremely well. You are the consumer that platforms are built around: trend-responsive, community-oriented, brand-aware, and visually engaged. Your purchasing behaviour is heavily influenced by social proof, drop culture, and the visibility of others in your cultural network.",
+   
   },
-  normcore: {
-    title: "The deliberate normcore",
+  Comfertability: {
+    title: "The deliberate casual chic",
     subtitle: "Comfort over curation. Function over performance. Style as non-statement.",
-    desc: "You are not disengaged from fashion — you have simply chosen not to perform it. Your wardrobe prioritises comfort, function, and ease over aesthetic coherence or trend alignment. This is a legitimate and increasingly theorised position: normcore as a conscious refusal of the identity labour that fashion demands. Algorithms find you difficult. Your low engagement with fashion content, non-specific purchasing patterns, and resistance to aesthetic categorisation make you an outlier in recommendation systems designed around taste signals.",
-    refs: "Normcore was theorised by K-HOLE (2013) as 'freedom from distinction' — opting out of the performance of individuality through dress. In algorithmic terms, you represent a gap in the data: a consumer whose identity is not legible through fashion behaviour alone."
+    desc: "You are not disengaged from fashion, you have simply chosen not to perform it. Your wardrobe prioritises comfort, function, and ease over aesthetic coherence or trend alignment. This is a legitimate and increasingly theorised position: normcore as a conscious refusal of the identity labour that fashion demands. Algorithms find you difficult. Your low engagement with fashion content, non-specific purchasing patterns, and resistance to aesthetic categorisation make you an outlier in recommendation systems designed around taste signals.",
+  
   }
 };
 
